@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body >
+<script language="JavaScript">
+    function  myfunction(){
+        x = document.getElementById("input").value;
+        alert(x);
+    }
+  function sendInfoTojava(){
+      var name = document.getElementById("input").value;
+      window.AndroidWebView.showInfoFromJs(name);
+  }
+  function showInfoFromJava(msg)
+  {
+      alert("the message from Android clien"+msg);
+  }
+
+</script>
+
+ <center><input type="text" id="input"> </center>
+    <center><button type="button" onclick="sendInfoTojava()">Click Me</button></center>
+</body>
+</html>
